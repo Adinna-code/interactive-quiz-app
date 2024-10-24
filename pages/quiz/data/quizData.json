@@ -1,0 +1,64 @@
+{
+    "categories": [
+        {
+            "name": "HTML",
+            "questions": [
+                {
+                    "question": "Which HTML tag is used to create a hyperlink?",
+                    "answers": ["<link>", "<a>", "<hyper>"],
+                    "correct": "<a>"
+                },
+                {
+                    "question": "Which of the following attributes must be unique?",
+                    "answers": ["class", "both", "id"],
+                    "correct": "id"
+                },
+                {
+                    "question": "Which of the following tags is used to create a paragraph?",
+                    "answers": ["<p>", "<paragraph>", "<text>"],
+                    "correct": "<p>"
+                }
+            ]
+        },
+        {
+            "name": "CSS",
+            "questions": [
+                {
+                    "question": "What unit is used to specify font size in CSS?",
+                    "answers": ["px", "pt", "em"],
+                    "correct": "px"
+                },
+                {
+                    "question": "Which CSS property is used to change the text color?",
+                    "answers": ["font-color", "text-color", "color"],
+                    "correct": "color"
+                },
+                {
+                    "question": "Which CSS property is used to add margins to an element?",
+                    "answers": ["padding", "margin", "border"],
+                    "correct": "margin"
+                }
+            ]
+        },
+        {
+            "name": "JavaScript",
+            "questions": [
+                {
+                    "question": "Which operator is used to compare values in JavaScript?",
+                    "answers": ["==", "===", "="],
+                    "correct": "==="
+                },
+                {
+                    "question": "How do you define a function in JavaScript?",
+                    "answers": ["function myFunction()", "def myFunction()", "func myFunction()"],
+                    "correct": "function myFunction()"
+                },
+                {
+                    "question": "Which method is used to convert a string to a number in JavaScript?",
+                    "answers": ["Number()", "toString()", "parseInt()"],
+                    "correct": "parseInt()"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #FEFAE0;
+    color: #333;
+    line-height: 1.6;
+    margin: 50px;
+}
+
+h1 {
+    font-size: 50px;
+    color: #283618;
+}
+
+a {
+    text-decoration: none;
+    color: #BC6C25;
+}
+
+input {
+    margin-right: 10px;
+}

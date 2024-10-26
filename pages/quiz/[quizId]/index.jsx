@@ -29,17 +29,17 @@ export async function getStaticProps({ params }) {
 
 export default function QuizPage({category}) {
     return (
-        <div>
-            <Header/>
-            <h1>{category.name} Quiz</h1>
-            <ul>
-            {category.questions.map((question, index) => (
-                <li key={index}>
-                    <Link href={`/quiz/${category.name.toLowerCase()}/question/${index + 1}`}>
-                        Question {index + 1}
-                    </Link>
-                </li>
-            ))}
+        <div className="bg-gray-50 p-6 rounded-lg shadow-lg">
+            <Header />
+            <h1 className="text-3xl font-bold text-gray-800 mb-4">{category.name} Quiz</h1>
+            <ul className="list-disc list-inside text-gray-700 space-y-2">
+                {category.questions.map((question, index) => (
+                    <li key={index} className="hover:text-[#BC6C25] hover:font-bold">
+                        <Link href={`/quiz/${category.name.toLowerCase()}/question/${index + 1}`} className="hover:underline">
+                            Question {index + 1}
+                        </Link>
+                    </li>
+                ))}
             </ul>
         </div>
     )}

@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Interactive Quiz App
 
-## Getting Started
+An interactive quiz project built with **Next.js** and **React**. Users can answer questions and add new questions directly through the app. Since the project lacks a real backend, questions are saved and updated using `localStorage` to simulate writing data to a file.
 
-First, run the development server:
+## Project Description
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This application allows users to:
+- Answer questions organized by categories.
+- Add new questions through an in-app form.
+- Save and manage questions directly in `localStorage`.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The project includes four main pages:
+1. **Home** - Introduction and navigation to quiz categories.
+2. **Categories** - Page for selecting a quiz category.
+3. **Quiz** - Page to go through questions within the selected category.
+4. **Question** - Page for one question at the time within the selected quiz.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Technologies Used
+- **Next.js** for routing and page management.
+- **React** for component interaction logic.
+- **api** for iterate the json file
+- **localStorage** to simulate a database.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Installation and Running the Project
 
-## Learn More
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/username/InteractiveQuizApp.git
 
-To learn more about Next.js, take a look at the following resources:
+2. **Navigate to folder**
+   ```bash
+   cd InteractiveQuizApp
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **Install dependencies**
+   ```bash
+   npm install
+   
+4. **Run the application**
+   ```bash
+   npm run dev
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+The application will be available at http://localhost:3000.
 
-## Deploy on Vercel
+**Branch Structure**
+**main**: The primary branch containing the stable version of the application.
+**module-3**: The branch containing a form for users to add a new question on the quiz.
+**improvements**: Separate branch for storage the new questions in local storage.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Branch Workflow**
+1. Create a new branch for a feature:
+  ```bash
+  git checkout -b feature/{feature-name}
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+2. Commit and Push Changes:
+  Stage changes: git add .
+  Commit changes: git commit -m "Description of change"
+  Push to remote: git push origin feature/{feature-name}
+
+3. Pull Request (PR):
+  - Once the feature is complete, open a Pull Request to merge changes into the dev branch.
+  - After approval, the feature will be included in improvements and eventually merged into main after testing.
+
+**Contributions**
+
+Contributions are welcome! Follow these steps to contribute:
+  - Fork the repository and create a branch for your modifications.
+  - Once you've made your changes, submit a Pull Request.
+  - Clearly describe the functionality or improvements you've added in the PR.
+
+If you encounter any issues or have suggestions, please open an issue on GitHub!
+
+

@@ -49,12 +49,12 @@ The application will be available at http://localhost:3000.
 **Branch Workflow**
 1. Create a new branch for a feature:
    ```bash
-  git checkout -b feature/{feature-name}
+   git checkout -b feature/{feature-name}
   
 2. Commit and Push Changes:
-  Stage changes: git add .
-  Commit changes: git commit -m "Description of change"
-  Push to remote: git push origin feature/{feature-name}
+  - Stage changes: git add .
+  - Commit changes: git commit -m "Description of change"
+  - Push to remote: git push origin feature/{feature-name}
 
 3. Pull Request (PR):
   - Once the feature is complete, open a Pull Request to merge changes into the dev branch.

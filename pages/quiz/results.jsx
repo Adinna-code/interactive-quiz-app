@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Button from "@/components/Button";
 
 export async function getServerSideProps({ query }) {
     const score = parseInt(query.score) || 0;
@@ -25,7 +26,7 @@ export default function ResultsPage({ score, totalQuestions, message}) {
             <p>Correct answers: {score}</p>
             <p>{message}</p>
             <Link href={`/categories`}>
-                <button>Back to quiz</button>
+                <Button text="Back to categories"/>
             </Link>
         </div>
     )

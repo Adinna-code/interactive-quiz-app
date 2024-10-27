@@ -1,7 +1,6 @@
-
-const Button = () => {
+const Button = ({text = "Next Question"}) => {
     return (
-        <button className="bg-orange-900 text-white font-bold py-2 px-4 rounded">Next Question</button>
+        <button className="bg-orange-900 text-white font-bold py-2 px-4 rounded">{text}</button>
     )
 }
 

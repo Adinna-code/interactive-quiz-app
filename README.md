@@ -48,9 +48,9 @@ The application will be available at http://localhost:3000.
 
 **Branch Workflow**
 1. Create a new branch for a feature:
-  ```bash
+   ```bash
   git checkout -b feature/{feature-name}
-
+  
 2. Commit and Push Changes:
   Stage changes: git add .
   Commit changes: git commit -m "Description of change"
